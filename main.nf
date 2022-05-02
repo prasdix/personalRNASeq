@@ -59,7 +59,7 @@ workflow NFCORE_RNASEQ {
 //
 // WORKFLOW: Execute a single named workflow for the pipeline
 // See: https://github.com/nf-core/rnaseq/issues/619
-//
+// added new line
 workflow {
     NFCORE_RNASEQ ()
 }
