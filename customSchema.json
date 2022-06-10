@@ -44,7 +44,8 @@
                 "with_umi": {
                     "type": "boolean",
                     "fa_icon": "fas fa-barcode",
-                    "description": "Enable UMI-based read deduplication."
+                    "description": "Enable UMI-based read deduplication.",
+                    "default": false
                 },
                 "umitools_extract_method": {
                     "type": "string",
@@ -300,7 +301,8 @@
                 "clip_r1": {
                     "type": "integer",
                     "description": "Instructs Trim Galore to remove bp from the 5' end of read 1 (or single-end reads).",
-                    "fa_icon": "fas fa-cut"
+                    "fa_icon": "fas fa-cut",
+                    "default": 1
                 },
                 "clip_r2": {
                     "type": "integer",
@@ -360,6 +362,7 @@
                     "type": "string",
                     "description": "Specifies the pseudo aligner to use - available options are 'salmon'. Runs in addition to '--aligner'.",
                     "fa_icon": "fas fa-hamburger",
+                    "default": "salmon",
                     "enum": ["salmon"]
                 },
                 "bam_csi_index": {
